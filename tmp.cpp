@@ -18,7 +18,7 @@
 #define gvs(V,N)         {for(int NI=0;NI<N;NI++){string now;cin>>now;(V).push_back(now);}}
 
 #define gedge(V,M,D)     {for(int NI=0;NI<M;NI++){int a,b;cin>>a>>b;(V)[a].push_back(b);if(!D)(V)[b].push_back(a);}}
-#define gwedge(V,M,D)     {for(int NI=0;NI<M;NI++){int a,b,c;cin>>a>>b>>c;(V)[a].push_back({b,c});if(!D)(V)[b].push_back({a,c});}}
+#define gwedge(V,M,D)    {for(int NI=0;NI<M;NI++){int a,b,c;cin>>a>>b>>c;(V)[a].push_back({b,c});if(!D)(V)[b].push_back({a,c});}}
 
 #define garr(ARR,N)      {for(int i=0;i<N;i++){cin>>ARR[i];}}
 #define garr2(ARR,N,M)   {for(int i=0;i<N;i++){for(int j=0;j<M;j++){cin>>ARR[i][j];}}}
@@ -112,6 +112,6 @@ using namespace std;
 
 
 signed main() {
-    FASTIO();
+	FASTIO();
     
 }
