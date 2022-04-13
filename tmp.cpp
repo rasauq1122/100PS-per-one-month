@@ -83,6 +83,7 @@ int safe(int x, int y, int Mx, int My, int mx = 0, int my = 0) {return mx <= x &
 int mivs(int a, int m) {int u = 0, v = 1, k = m; while (a != 0) {int t = k / a; k -= t * a; swap(a, k); u -= t * v; swap(u, v);} return (u+m)%m;}
 
 
+
 signed main() {
     FASTIO();
     
