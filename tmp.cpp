@@ -31,7 +31,7 @@
 #define sz(a) (int)((a).size())
 #define all(v) (v).begin(), (v).end()
 #define uniq(v) sort((v).begin(), (v).end()); (v).erase(unique((v).begin(),(v).end()),(v).end()) 
-#define mset(arr, n) memset(arr, sizeof(arr), n);
+#define mset(arr, n) memset(arr, n, sizeof(arr));
 
 #define BIT(a,b) (((a)>>(b))&1)
 #define dxdy(dx,dy) int dx[8] = {0, 0, 1, -1, 1, 1, -1, -1}, dy[8] = {1, -1, 0, 0, 1, -1, 1, -1}
