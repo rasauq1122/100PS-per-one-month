@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 
-#define int long long
-
 #define INF ((1LL<<31)-1)
 #define LINF ((1LL<<61)-1)
 #define MOD 1000000007
@@ -54,17 +52,28 @@ using namespace std;
 template <typename T1, typename T2> ostream& operator<<(ostream& out, pair<T1, T2>& p) {out << '{' << p.first << ", " << p.second << '}'; return out;}
 template <typename T> ostream& operator<<(ostream& out, vector<T>& v) {int len = v.size(); for (int i = 0 ; i < len ; i++) out << v[i] << (i+1 == len ? '\n' : ' '); return out;}
 template <typename T> ostream& operator<<(ostream& out, vector<vector<T>>& v) {int len = v.size(); for (int i = 0 ; i < len ; i++) out << v[i]; return out;}
+template <typename T> vector<T> vec(int n) {return vector<T>(n);}
+template <typename T, typename... Types> auto vec(int n, Types... sz) {auto nvec = vec<T>(sz...); return vector<decltype(nvec)>(n, nvec);}
 
 typedef pair<int,int> pii;
 typedef tuple<int,int,int> tiii;
 typedef tuple<int,int,int,int> tII;
 typedef vector<int> vi;
-typedef vector<pair<int,int>> vp;
-typedef vector<tuple<int,int,int>> vt;
-typedef vector<string> vs;
-typedef vector<vector<int>> wi;
-typedef vector<vector<pair<int,int>>> wp;
-typedef vector<vector<tuple<int,int,int>>> wt;
+typedef vector<vi> wi;
+typedef vector<pii> vp;
+typedef vector<vp> wp;
+typedef vector<tiii> vt;
+typedef vector<vt> wt;
+typedef long long lli;
+typedef pair<lli,lli> pll;
+typedef tuple<lli,lli,lli> tlll;
+typedef tuple<lli,lli,lli,lli> tLL;
+typedef vector<lli> vl;
+typedef vector<vl> wl;
+typedef vector<pll> vpl;
+typedef vector<vpl> wpl;
+typedef vector<tlll> vtl;
+typedef vector<vtl> wtl;
 
 int pow(int a, int b, int c) {if (!b) return 1; int rtn = pow(a, b/2, c); rtn = rtn * rtn % c; if (b%2) {rtn = rtn * a % c;} return rtn;}
 int safe(int x, int y, int Mx, int My, int mx = 0, int my = 0) {return mx <= x && x < Mx && my <= y && y < My;}
