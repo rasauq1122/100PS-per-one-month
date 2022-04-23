@@ -3,3 +3,6 @@ a.cpp
 a.out
 goorm.manifest
 .vscode
+BOJ-helper/diary
+BOJ-helper/.gitignore
+BOJ-helper/README.md
