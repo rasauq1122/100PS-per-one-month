@@ -26,10 +26,19 @@
 #define itos to_string
 #define endl '\n'
 
-#define print cout <<
-#define BLK << ' ' <<
-#define BLE << ' '
-#define NLE << '\n'
+#ifdef LOCAL
+    #define print(x) cout << x
+    #define BLS ' ' <<
+    #define BLK << ' ' <<
+    #define BLE << ' '
+    #define NLE << '\n'
+#else
+    #define print(x)
+    #define BLS
+    #define BLK
+    #define BLE
+    #define NLE
+#endif
 
 #define sz(a) (int)((a).size())
 #define all(v) (v).begin(), (v).end()
