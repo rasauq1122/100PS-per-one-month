@@ -6,3 +6,4 @@ goorm.manifest
 BOJ-helper/diary
 BOJ-helper/.gitignore
 BOJ-helper/README.md
+sample/*
