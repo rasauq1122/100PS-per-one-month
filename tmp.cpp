@@ -42,7 +42,7 @@
 
 #define sz(a) (int)((a).size())
 #define all(v) (v).begin(), (v).end()
-#define uniq(v) sort((v).begin(), (v).end()); (v).erase(unique((v).begin(),(v).end()),(v).end()) 
+#define uniq(v) (sort((v).begin(), (v).end()), (v).erase(unique((v).begin(),(v).end()),(v).end()))
 #define mset(arr, n) memset(arr, n, sizeof(arr));
 
 #define BIT(a,b) (((a)>>(b))&1)
